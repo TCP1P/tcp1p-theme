@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="{{ Configs.ctf_small_icon }}" type="image/x-icon">
+  <meta property="og:title" content="{{ Configs.ctf_name }}" />
+  <meta property="og:description" content="{{ Configs.theme_settings.get('social_desc', Configs.ctf_name.replace('TCP1P', 'CTF ') + ' is yet another CTF contest brought to you by a yet another CTF team.') }}" />
+  <meta property="og:image" content="{{ Configs.theme_settings.get('social_banner', 'https://avatars.githubusercontent.com/u/109392350?s=200&v=4') }}" />
 
   {% block stylesheets %}
     {{ Assets.css("assets/scss/main.scss") }}
