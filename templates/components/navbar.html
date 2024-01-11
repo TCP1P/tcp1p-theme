@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top ">
+<nav class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top " style="
+backdrop-filter: blur(3px);">
   <div class="container">
     <a href="{{ url_for('views.static_html', route='/') }}" class="navbar-brand">
         {{ Configs.ctf_name }}
@@ -11,7 +12,7 @@
       <span class="fa fa-gamepad"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="base-navbars">
+    <div class="collapse navbar-collapse" id="base-navbars" style="backdrop-filter: blur(3px);">
       <ul class="navbar-nav me-auto">
         {% for page in Plugins.user_menu_pages %}
           <li class="nav-item">

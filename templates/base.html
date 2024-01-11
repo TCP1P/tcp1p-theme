@@ -5,6 +5,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="{{ Configs.ctf_small_icon }}" type="image/x-icon">
+  <meta name="title" content="{{ Configs.ctf_name }}">
+  <meta name="description" content="{{ Configs.ctf_description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ url_for('views.static_html', _external=True) }}">
+  <meta property="og:title" content="{{ Configs.ctf_name }}">
+  <meta property="og:description" content="{{ Configs.ctf_description }}">
+  <meta property="og:image" content="{{ url_for('views.files', path=Configs.ctf_logo, _external=True) }}">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ url_for('views.static_html', _external=True) }}">
+  <meta property="twitter:title" content="{{ Configs.ctf_name }}">
+  <meta property="twitter:description" content="{{ Configs.ctf_description }}">
+  <meta property="twitter:image" content="{{ url_for('views.files', path=Configs.ctf_logo, _external=True) }}">
+  <meta property="og:image:secure_url" content="{{ url_for('views.files', path=Configs.ctf_logo, _external=True) }}" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="600" />
+  <meta property="og:image:alt" content="{{ Configs.ctf_description }}" />
 
   {% block stylesheets %}
     {{ Assets.css("assets/scss/main.scss") }}
